@@ -1,6 +1,21 @@
-import * as games from "@/lib/game/data.json";
+import { Game } from "@/lib/game/game";
 
-export default function Home() {
+async function getData(): Promise<Game[]> {
+	// Fetching data from a Next.js router handler instead of directy importing
+	// the JSON here is a deliberate choice. It allows us to demonstrate how to
+	// data is fetched in the server.
+	const res = await fetch("http://localhost:3000/api/games");
+
+	if (!res.ok) {
+		throw new Error("Failed to fetch games");
+	}
+
+	return res.json().then((data) => data.data);
+}
+
+export default async function Home() {
+	const games = await getData();
+
 	return (
 		<main className="flex min-h-screen flex-col p-6 gap-6">
 			<h1 className="text-3xl font-bold">Video Games Release Tracker</h1>
