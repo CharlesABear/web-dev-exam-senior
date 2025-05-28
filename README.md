@@ -13,14 +13,11 @@ This test is designed to take **4 hours** to finish.
 ## Evaluation
 
 Your work will be evaluated according to these factors:
-
 - Code structure
-
 - Understanding the requirements
-
 - Communication of design choices
-
 - Aesthetic sense
+- Error handling and monitoring
 
 ## Requirements
 
