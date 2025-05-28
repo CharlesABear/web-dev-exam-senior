@@ -40,6 +40,9 @@ In the project, the games data is directly passed as props to the game component
   - Should display all tags of all games as selectable pills
   - If no tag is selected, display all games
   - If at least one tag is selected, display only the games that have any of the selected tags
+- [ ] Server-side search and pagination:
+  - Move over the search logic to the server. The client then needs to call the server with the search parameters to get the matching games.
+  - Add support for pagination and implement pagination in the client.
 
 ### Bonus
 
