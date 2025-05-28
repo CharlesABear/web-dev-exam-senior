@@ -8,7 +8,7 @@ You will work on a **Video Games Release Tracker**. The project is a **NextJS*
 
 [Please make your own repository and use this one as the template](https://github.com/CharlesABear/web-dev-exam-senior). You can easily do this with the *Use this template* button.
 
-This test is designed to take **4 hours** to finish.
+You will be given **5** **hours** to complete as much of the requirements as you can.
 
 ## **Evaluation**
 
